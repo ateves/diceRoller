@@ -1,74 +1,15 @@
 import random 
 
-sidesSix = 6
-sidesEight = 8
-sidesTwenty = 20
-sidesTwentyFour = 24
-sidesThirtyNine = 39
-sidesSeventy = 70
+num = 75
 
-def rollD6(sidesSix):
-    roll = random.randint(1,sides)
-    print("A roll of a dice with six sides was " + str(roll) + ".")
+def rollD70(n):
+    roll = random.randint(1,n)
+    print("A roll of a dice with seventy-five sides was: " + str(roll) + ".")
 
-def rollD8(sidesEight):
-    roll = random.randint(1,sidesEight)
-    print("A roll of a dice with eight sides was " + str(roll) + ".")
+count = 0
 
-def rollD20(sidesTwenty):
-    roll = random.randint(1,sidesTwenty)
-    print("A roll of a dice with twenty sides was " + str(roll) + ".")
-
-def rollD24(sidesTwentyFour):
-    roll = random.randint(1,sidesTwentyFour)
-    print("A roll of a dice with twenty-four sides was " + str(roll) + ".")
-
-def rollD31(sidesThirtyNine):
-    roll = random.randint(1,sidesThirtyNine)
-    print("A roll of a dice with thirty-nine sides was " + str(roll) + ".")    
-
-def rollD70(sidesSeventy):
-    roll = random.randint(1,sidesSeventy)
-    print("A roll of a dice with seventy sides was " + str(roll) + ".")
-
-while (count < 5):    
-    count = count + 1
-    rollD6(sidesSix)
+while (count<5):
+    rollD70(num)
+    count += 1
 else:
-    count = 0
-    print("\n")
-
-while (count < 5):    
-    count = count + 1
-    rollD8(sidesEight)
-else:
-    count = 0
-    print("\n")
-
-while (count < 5):    
-    count = count + 1
-    rollD20(sidesTwenty)
-else:
-    count = 0
-    print("\n")
-
-while (count < 5):    
-    count = count + 1
-    rollD24(sidesTwentyFour)
-else:
-    count = 0
-    print("\n")
-    
-while (count < 5):    
-    count = count + 1
-    rollD31(sidesThirtyNine)
-else:
-    count = 0
-    print("\n")
-    
-while (count < 5):    
-    count = count + 1
-    rollD70(sidesSeventy)
-else:
-    count = 0
-    print("\n")
+    pass
